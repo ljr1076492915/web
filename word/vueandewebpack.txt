@@ -1,0 +1,42 @@
+vue create 项目名
+npm i 
+npm install --save vue-router
+npm install node-sass --save dev
+npm install sass-loader --save dev
+
+vue.config.js
+module.exports = {}
+
+自定义端口号
+devServer: {
+	port: 3000, // 端口
+},
+build 页面空白
+publicPath: './',
+引入全局 scss
+css: {
+	loaderOptions: {
+		sass: {
+			data: `@import "@/assets/css/all.scss";`
+		}
+	},
+}
+app.vue 
+<style src="./assets/css/all.scss" lang="scss"></style>
+
+router 写法
+const HelloWorld = () => import('./components/HelloWorld.vue');
+
+export default new Router({
+	mode: 'history',
+	routes: [
+		{
+			path: '/',
+			name: 'HelloWorld',
+			component: HelloWorld
+		}
+	]
+})
+
+获取router 参数
+this.$route.name
