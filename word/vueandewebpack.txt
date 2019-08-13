@@ -40,3 +40,15 @@ export default new Router({
 
 获取router 参数
 this.$route.name
+
+
+router 嵌套
+{
+	path: '/home',
+	name: 'Home',
+	component: Home,
+	children: [
+		{path: '/user1', component: User1},
+		{path: '/user2', component: User2},
+	]
+}
