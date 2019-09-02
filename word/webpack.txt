@@ -1,0 +1,63 @@
+1. 打包js文件
+创建 index.html  src文件夹 src/index.js
+npm init -y 创建package.json
+npm install webpack webpack-cli --save-dev  添加webpack脚架
+删掉 package.json main 防止发布
+添加private  隐私
+添加 webpack.config.js webpack配置
+webpack.config 模板
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+
+package.json 添加build脚本 webpack
+多个入口
+修改 webpack.config entry 为数组  键：路径  出口 filename: '[name].js',
+
+
+注：
+1.标签上的onclick事件编译后 会显示事件undefind   =====>   用id.onclick
+
+2.server 
+
+npm install webpack-dev-server --save-dev
+"dev": "webpack-dev-server --open"
+
+3.webpack 编译react  .jsx文件
+本地开发模式 
+npm i webpack-dev-server --save
+"dev": "webpack-dev-server  --port 8080  --inline --content-base ./build" 在当前目录执行 npm run dev,执行完成后，在文件夹build中新建index.html
+安装babel相关组件，让webpack自动转换jsx
+npm install babel-loader babel-core babel-preset-react babel-preset-es2015 --save-dev  
+
+webpack.config  加入loader
+{
+	test: /\.jsx?$/,
+	exclude: /node_modules/,
+	use: {
+	  loader: 'babel-loader',
+	  options: {
+		presets: ['es2015', 'react']
+	  }
+	}
+}
+
+npm install babel-loader@7 --save-dev  升级babel-loader
+npm install react --save-dev  react包
+npm install react-dom --save-dev deact-dom 包
+react实时热更新
+编译后的bundle.js在根目录的内存里  <script src="http:localhost:8080/bundle.js"></script>
+
+
+
+
+
+
+
+
