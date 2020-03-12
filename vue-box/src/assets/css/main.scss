@@ -1,0 +1,222 @@
+/* 医疗信息管理系统 silber */
+/* 二级菜单 */
+.medical-main {
+	ul {
+		.is-opened {
+			.el-submenu__title {
+				color: #246eda !important;
+			}
+		}
+
+		li {
+			ul {
+				li:hover {
+					color: #246eda !important;
+				}
+			}
+		}
+	}
+}
+
+
+// 外事页面选择器，输入框
+.right-select{
+	width: 100%;
+	margin-top: 48px;
+	padding-left: 48px;
+	background: #e6e6e6;
+	.el-input{
+		margin-bottom: 32px !important;
+		height: 42px !important;
+		.el-input__inner{
+			height: 42px !important;
+			line-height: 42px !important;
+			margin-bottom: 32px !important;
+		}
+	}
+}
+.right-search{
+	width:220px;
+	// height: 87px;
+	padding: 14px 24px;
+	margin-top:48px;
+	margin-bottom: 12px;
+	display: flex;
+	background: #ededed;
+	.search-input{
+		width: 220px !important;
+		.el-input--small{
+			width:260px !important;
+			height:59px !important;
+			margin-left:20px;
+			line-height:59px;
+			.el-input__inner{
+				width: 260px !important;
+				height:80% !important;
+			}
+		}
+		
+	}
+	img{
+		width:32px;
+		height:32px;
+		margin-top:16px;
+		// margin-left:-24px;
+	}
+}
+
+/* 公共服务系统 sidebar */
+.public-service-silder {
+	.el-submenu__title:focus,
+	.el-submenu__title:hover {
+		background-color: #fff;
+	}
+	
+	.el-submenu__title {
+		height: 46px;
+		line-height: 46px;
+		position: relative;
+		
+		.el-submenu__icon-arrow {
+			width: 12px;
+			right: 0;
+			left: 86px;
+			margin-top: 0;
+		}
+	}
+	
+	.class-a {
+		width: 86px;
+		height: 24px;
+		line-height: 20px;
+		font-size: 12px;
+		text-indent: 1em;
+		transform: translateY(16px);
+	}
+	
+	.class-a:hover {
+		background-color: #F0F3FA;
+		border-radius: 12px;
+	}
+	
+	.el-menu-item:focus, 
+	.el-menu-item:hover {
+		background-color: #fff;
+	}
+	
+	.el-submenu {
+		.el-menu-item {
+			padding: 0 15px !important;
+			height: 40px;
+			line-height: 40px;
+			margin-top: 10px;
+		}
+		
+		.second-level {
+			padding: 0 15px;
+		}
+		
+		.second-level:hover {
+			background-color: #4777E7;
+			color: #fff;
+			border-radius: 20px;
+			
+			i {
+				color: #fff;
+			}
+		}
+	}
+	
+	.sidebar-el-menu {
+		.is-opened {
+			.el-submenu__title {
+				.class-a {
+					background-color: #F0F3FA;
+					border-radius: 12px;
+				}
+			}
+			
+			.el-menu--inline {
+				.is-active {
+					.second-level {
+						background-color: #4777E7;
+						color: #fff;
+						border-radius: 20px;
+						
+						i {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 公共服务系统 页面 */
+.service-apply {
+	.el-form--label-top {
+		.el-form-item__label {
+			padding: 0;
+		}
+	}
+	
+	.el-select {
+		width: 80%;
+		
+		.el-input__inner {
+			background: #F5F7FC;
+		}
+	}
+	
+	.el-form-item__label {
+		font-size: 12px;
+		color: #404143;
+	}
+	
+	.el-date-editor--datetimerange.el-input__inner {
+		width: 80%;
+		background: #F5F7FC;
+	}
+	
+	.el-date-editor .el-range-input {
+		background: #F5F7FC;
+	}
+	
+	.service-input {
+		width: 80%;
+		
+		.el-input__inner {
+			background: #F5F7FC;
+		}
+	}
+	
+	.el-upload--picture-card {
+		width: 72px;
+		height: 72px;
+		border: none;
+		background-color: #fff;
+		background-image: url('../img/upload.png');
+		background-size: 100% 100%;
+		background-position: center center;
+	}
+	
+	.el-upload-list--picture-card .el-upload-list__item {
+		width: 72px;
+		height: 72px;
+	}
+	
+	.el-date-editor.el-input {
+		width: 80%;
+		
+		.el-input__inner {
+			background: #F5F7FC;
+		}
+	}
+}
+
+/* 头部返回 */
+.head-select {
+	.el-dropdown-menu__item {
+		text-align: left !important;
+	}
+}
