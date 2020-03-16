@@ -14,13 +14,18 @@ export default class Home extends React.Component {
 		this.state = {
 			time: '',
 			text: '',
-			show: false
+			show: false,
+			timerID: ''
 		}
 	}
 	
 	componentDidMount() {
 		this.getTime();
 		this.loadTime();
+	}
+	
+	componentWillUnmount() {
+		clearInterval(this.timerID);
 	}
 	
 	gouOut(e) {
@@ -43,7 +48,7 @@ export default class Home extends React.Component {
 	}
 	
 	loadTime() {
-		setInterval(() => {
+		this.timerID = setInterval(() => {
 			this.getTime();
 		}, 1000);
 	}
