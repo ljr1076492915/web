@@ -42,23 +42,23 @@ export default class ChineseResult extends React.Component {
 							<div className="c-print1">剩余免费打印次数：0次</div>
 			
 							<div className="c-comBtn chinese-p-margin3">
-								<div className="c-btn btn_1">上移</div>
-								<div className="c-btn btn_1">下移</div>
-								<div className="c-btn btn_1">左移</div>
-								<div className="c-btn btn_1">右移</div>
+								<div className="c-btn c-btn_1">上移</div>
+								<div className="c-btn c-btn_1">下移</div>
+								<div className="c-btn c-btn_1">左移</div>
+								<div className="c-btn c-btn_1">右移</div>
 							</div>
 			
 							<div className="c-comBtn">
-								<div className="c-btn btn_1">放大</div>
-								<div className="c-btn btn_1">缩小</div>
-								<div className="c-btn btn_1">上页</div>
-								<div className="c-btn btn_1">下页</div>
+								<div className="c-btn c-btn_1">放大</div>
+								<div className="c-btn c-btn_1">缩小</div>
+								<div className="c-btn c-btn_1">上页</div>
+								<div className="c-btn c-btn_1">下页</div>
 							</div>
 			
 							<div className="c-comBtn">
-								<div className="c-btn btn_2">退出系统</div>
-								<div className="c-btn btn_2">打印</div>
-								<div className="c-btn btn_2">返回首页</div>
+								<div className="c-btn c-btn_2">退出系统</div>
+								<div className="c-btn c-btn_2">打印</div>
+								<div className="c-btn c-btn_2">返回首页</div>
 							</div>
 						</div>
 			
