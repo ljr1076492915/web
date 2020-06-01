@@ -19,7 +19,8 @@ import './assets/Icon/iconfont.css';
 import Print from 'vue-print-nb'
 Vue.use(Print); //注册
 
-import axios from './api/index.js'
+import axios from './api/index.js';
+import store from './store';
 Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false;
@@ -35,6 +36,7 @@ const i18n = new VueI18n({
 /* eslint-disable no-new */
 new Vue({
   router,
+  store,
   i18n,
   render: h => h(App)
 }).$mount("#app")
