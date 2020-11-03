@@ -41,10 +41,10 @@ Print.prototype = {
   },
 
   getHtml: function () {
-    var inputs = document.querySelectorAll('input');
-    var textareas = document.querySelectorAll('textarea');
-    var selects = document.querySelectorAll('select');		
-    var canvass = document.querySelectorAll('canvas');
+    var inputs = this.dom.querySelectorAll('input');
+    var textareas = this.dom.querySelectorAll('textarea');
+    var selects = this.dom.querySelectorAll('select');		
+    var canvass = this.dom.querySelectorAll('canvas');
 		
     for (var k = 0; k < inputs.length; k++) {
       if (inputs[k].type == "checkbox" || inputs[k].type == "radio") {
